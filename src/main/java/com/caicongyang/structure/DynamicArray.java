@@ -9,7 +9,8 @@ package com.caicongyang.structure;
 public class DynamicArray<T> {
 
 
-    private int initialCapacity = 16;
+
+    private int defaultInitialCapacity = 16;
 
 
     //声明初始数组
@@ -21,8 +22,15 @@ public class DynamicArray<T> {
      * 在对象被创建时创建数组，初始大小为0
      */
     public DynamicArray() {
-        array = new Object[initialCapacity];
+        array = new Object[defaultInitialCapacity];
     }
+
+
+    public DynamicArray(int capacity) {
+        array = new Object[capacity];
+    }
+
+
 
 
     public Boolean add(T record) {
@@ -45,14 +53,9 @@ public class DynamicArray<T> {
 
 
     public Integer size() {
-
         return size;
     }
 
-
-    public DynamicArray(int capacity) {
-        array = new Object[capacity];
-    }
 
 
     public static void main(String[] args) {

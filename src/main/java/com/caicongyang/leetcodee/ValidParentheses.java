@@ -2,6 +2,9 @@ package com.caicongyang.leetcodee;
 
 import java.util.*;
 
+/**
+ * 判断字符串是否有效的括号
+ */
 public class ValidParentheses {
 
 
