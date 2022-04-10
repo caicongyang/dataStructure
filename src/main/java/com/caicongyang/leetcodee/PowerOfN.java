@@ -5,6 +5,8 @@ import org.junit.Test;
 
 /**
  * 判断一个数是不是2的N次方
+ *
+ * O(logn)
  */
 public class PowerOfN {
 

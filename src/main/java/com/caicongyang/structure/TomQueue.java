@@ -1,4 +1,4 @@
-package com.caicongyang.leetcodee;
+package com.caicongyang.structure;
 
 /**
  *
@@ -7,12 +7,12 @@ package com.caicongyang.leetcodee;
  *
  *
  */
-public class MyQueue {
+public class TomQueue {
 
     /**
      * Initialize your data structure here.
      */
-    public MyQueue() {
+    public TomQueue() {
 
     }
 
