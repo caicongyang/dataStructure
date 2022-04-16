@@ -1,19 +1,19 @@
 package com.caicongyang.structure;
 
-public class Stack {
+public class MyStack {
 
 
-    public String[] arr;
+    public Integer[] arr;
 
     public int n = 0;
 
 
-    public Stack(int cat) {
-        arr = new String[cat];
+    public MyStack(int cat) {
+        arr = new Integer[cat];
     }
 
     // 入栈
-    public Stack push(String person) {
+    public MyStack push(Integer person) {
         judgeSize();
         arr[n] = person;
         n++;
@@ -30,7 +30,7 @@ public class Stack {
     }
 
     private void resize(int size) {
-        String[] newArr = new String[size];
+        Integer[] newArr = new Integer[size];
         for (int i = 0; i < n; i++) {
             newArr[i] = arr[i];
         }
@@ -39,11 +39,11 @@ public class Stack {
 
 
     // 出栈
-    public String pop() {
+    public Integer pop() {
         if (isEmpty()) {
             return null;
         }
-        String person = arr[--n];
+        Integer person = arr[--n];
         arr[n] = null;
         return person;
     }
@@ -67,11 +67,11 @@ public class Stack {
 
 
     public static void main(String[] args) {
-        Stack stack = new Stack(10);
-        stack.push("tom");
-        stack.push("json");
-        stack.print();
-        stack.pop();
+        MyStack myStack = new MyStack(10);
+        myStack.push(5);
+        myStack.push(10);
+        myStack.print();
+        myStack.pop();
 
     }
 
